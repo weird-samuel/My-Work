@@ -3,6 +3,11 @@ if (/Android|/i.test(navigator.userAgent) && screen.width < 300) {
     alert("Please use a device with a bigger screen.");
     document.body.innerHTML = '';
 }
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    alert("This Site looks better on pc");
+}
+
 //little hero text with blinking cursor
 var i = 0;
 var txt = 'Fiyinfoluwa';

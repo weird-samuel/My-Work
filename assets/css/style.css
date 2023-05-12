@@ -30,9 +30,28 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     background: var(--color-2);
     color: var(--color-4);
+}
+
+/* Custom ScrollBar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-5);
+    border-radius: 10px;
+}
+
+h1 {
+    font-weight: 900;
 }
 
 .nav-wrapper {
@@ -112,7 +131,7 @@ body {
 
 .hero img {
     position: absolute;
-    left: 10;
+    left: 8%;
     bottom: 0;
     height: 70%;
 }
@@ -168,6 +187,10 @@ svg {
 }
 
 
+.hero-service {
+    position: relative;
+    left: 2%;
+}
 
 .grid-view {
     transform: scale(0.75);
@@ -397,11 +420,27 @@ svg {
     width: 100%;
     height: 100vh;
     position: relative;
-    padding: 20px;
+    padding: 40px 20px 0;
+}
+
+.title {
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
 }
 
 .title span {
+    font-weight: 600;
     font-size: 4rem;
+}
+
+.about-content {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.about-content p {
+    margin-left: 5%;
 }
 
 
@@ -412,9 +451,13 @@ svg {
     .navbar ul {
         display: none;
     }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 450px) {
     .navbar img {
         height: 30px;
     }
