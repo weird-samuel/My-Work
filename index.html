@@ -89,10 +89,29 @@
             <h1>About Me</h1>
         </div>
         <div class="about-content">
-            <p>I am Samuel Adekunle, A fullstack Web Developer from Nigeria.</p>
+            <ul>
+                <li>I am <span id="glitch">Samuel Adekunle Fiyinfoluwa</span></li>
+                <!-- <li>A fullstack Web Developer from Nigeria.</li> -->
+            </ul>
         </div>
     </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/glitched-writer/lib/index.min.js"></script>
+    <script type="module">
+        import GlitchedWriter, {
+            wait
+        } from "https://cdn.skypack.dev/glitched-writer@2.0.29";
+
+        let glitch = document.getElementById("glitch")
+
+        // Calling GlitchedWriter constructor:
+        const writer = new GlitchedWriter(glitch, { html: true })
+
+        const phrases = ['A fullstack Web Developer from Nigeria', 'graphics design group', 'undergraduate team']
+
+        writer.queueWrite(phrases, 2000, true)
+    </script>
     <script src="assets/js/script.js"></script>
 </body>
 

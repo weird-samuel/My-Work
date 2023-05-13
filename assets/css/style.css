@@ -420,7 +420,7 @@ svg {
     width: 100%;
     height: 100vh;
     position: relative;
-    padding: 40px 20px 0;
+    padding: 60px 20px 0;
 }
 
 .title {
@@ -436,10 +436,10 @@ svg {
 
 .about-content {
     margin-left: 10px;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
-.about-content p {
+.about-content ul{
     margin-left: 5%;
 }
 

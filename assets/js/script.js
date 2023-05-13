@@ -4,7 +4,7 @@ if (/Android|/i.test(navigator.userAgent) && screen.width < 300) {
     document.body.innerHTML = '';
 }
 
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && screen.width < 00) {
     alert("This Site looks better on pc");
 }
 
